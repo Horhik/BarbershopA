@@ -1,12 +1,199 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Барбершоп Бородинский</title>
-</head> 
+</head>
+
 <body>
-    
+    <header class="header page-header ">
+        <h1 class="visually-hidden">Барбершоп Бородинский</h1>
+        <img src="../../src/svg/" alt="Логотип Барбершопа" class="page-header__img">
+        <nav class="mobile-nav">
+            <span class="mobile-nav__title">Главная</span>
+            <button class="burger mobile-nav__burger">Открыть Меню</button>
+        </nav>
+        <nav class="page-header__nav main-nav">
+            <ul class="main-nav__page-nav ">
+                <li class="page-nav__item"><a>ГЛАВНАЯ</a></li>
+                <li class="page-nav__item"><a href="works.html">Наши работы</a></li>
+                <li class="page-nav__item"><a href="form.html">Записаться</a></li>
+                <li class="page-nav__item"><a href="contacts.html">Контакты</a></li>
+                <li class="page-nav__item"><a href="https://htmlacademy.ru">HTML ACADEMY</a></li>
+            </ul>
+            <ul class="main-nav__user-nav user-nav">
+                <li class="user-nav__items user-nav__sign-in">
+                    <a href="#" class="">Войти</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="page">
+        <section class="info">
+            <h2 class="h2 info__h2">
+                Стрижка у нас <br> это выгодно!
+            </h2>
+            <p class="p info__p">
+                Мужская стрижка требует точного подхода. Обратимся к статистике:
+            </p>
+            <table class="info-table">
+                <tr>
+                    <td class="info-table__td">
+                        <string class="string info-table__string">1500 <sup>*</sup></string>
+                    </td>
+                    <td class="">
+                        <p class="info-table__p">
+                            рублей вложений
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="info-table__td">
+                        <string class="string info-table__string">7 200 </string>
+                    </td>
+                    <td class="">
+                        <p class="info-table__p">
+                            секунд времени мастера
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="info-table__td">
+                        <string class="string info-table__string">90 000 </string>
+                    </td>
+                    <td class="">
+                        <p class="info-table__p">
+                            постриженных волос
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="info-table__td">
+                        <string class="string info-table__string">500 000 <sup>*</sup></string>
+                    </td>
+                    <td class="">
+                        <p class="info-table__p">
+                            лайков и комплиментов
+                        </p>
+                    </td>
+                </tr>
+            </table>
+            <small class="info-table__lie">* — приведённые данные ложь</small>
+        </section>
+        <section class="advantages">
+            <ul class="advantages__items">
+                <li class="advantages__item">
+                    <h3 class="h3 advantages__h3">БЫСТРО</h3>
+                    <p class="p advantages__p">
+                        Мы делаем свою работу быстро! Два часа пролетят незаметно и Вы — счастливый обладатель стильной стрижки-минутки
+                    </p>
+                </li>
+                <li class="advantages__item">
+                    <h3 class="h3 advantages__h3">КРУТО</h3>
+                    <p class="p advantages__p">
+                        Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино. Во всяком случае внешне.
+                    </p>
+                </li>
+                <li class="advantages__item">
+                    <h3 class="h3 advantages__h3">ДОРОГО</h3>
+                    <p class="p advantages__p">
+                        Наши мастера — профессионалы своего делаи не могут стоить дёшево. К тому же, разве цена не даёт определённый статус?
+                    </p>
+                </li>
+            </ul>
+            <div class="slider-controls advantages__controls visually-hidden">
+                <button class="slider-controls__item" aria-label="Следующий слайд"></button>
+                <button class="slider-controls__item" aria-label="Следующий слайд"></button>
+                <button class="slider-controls__item" aria-label="Следующий слайд"></button>
+            </div>
+        </section>
+        <sectoin class="news">
+            <h2 class="h2 news__h2">Новости и акции</h2>
+            <div class="news-block">
+                <time datetime="2020-08-29">  <b class="news-block__number" title="сентября">29</b> сент</time>
+                <a href="" class="news-block__article">
+                    Нам наконец завезли Ягермайстер! Теперь вы можете пропусить стаканчик во время стрижки.
+                </a>
+            </div>
+            <div class="news-block">
+                <time datetime="2020-08-19">  <b class="news-block__number" title="сентября">19</b> сент</time>
+                <a href="" class="news-block__article">
+                                В нашей команде пополнение, Борис «Бритва» Стригунец, обладатель множества титулов и наград пополнил наши стройные ряды. Спешите записаться!
+                    </a>
+            </div>
+            <div class="news-block">
+                <time datetime="2020-08-09">  <b class="news-block__number" title="сентября">9</b> сент</time>
+                <a href="" class="news-block__article">
+                                В нашей команде пополнение, Борис «Бритва» СтрВсе дорожает, а наши стрижки нет! Как так? Приходите, постригитесь и узнаете, в чем здесь подвох!игунец, обладатель множества титулов и наград пополнил наши стройные ряды. Спешите записаться!
+                    </a>
+            </div>
+            <a href="news.html" class="button news__button">показать все</a>
+        </sectoin>
+        <section class="comments">
+            <h2 class="h2 comments__h2">Отзывы о нас</h2>
+            <blockquote class="comments__item">
+                <img src="../../src/img/" alt="Фотография пользователя">
+                <div class="comments--inner">
+                    <span class="comments__name">Трэвис Баркер</span>
+                    <p class="p comments__p">
+                        Спасибо за лысину! Был проездом в Москве, заскочил побриться, чтобы было видно новую татуировку!
+                    </p>
+                </div>
+            </blockquote>
+            <blockquote class="comments__item">
+                <img src="../../src/img/" alt="Фотография пользователя">
+                <div class="comments--inner">
+                    <span class="comments__name">Трэвис Баркер</span>
+                    <p class="p comments__p">
+                        Спасибо за лысину! Был проездом в Москве, заскочил побриться, чтобы было видно новую татуировку!
+                    </p>
+                </div>
+            </blockquote>
+            <blockquote class="comments__item">
+                <img src="../../src/img/" alt="Фотография пользователя">
+                <div class="comments--inner">
+                    <span class="comments__name">Трэвис Баркер</span>
+                    <p class="p comments__p">
+                        Спасибо за лысину! Был проездом в Москве, заскочил побриться, чтобы было видно новую татуировку!
+                    </p>
+                </div>
+            </blockquote>
+            <div class="slider-controls comments__controls">
+                <button class="slider-controls__item" aria-label="Следующий слайд"></button>
+                <button class="slider-controls__item" aria-label="Следующий слайд"></button>
+                <button class="slider-controls__item" aria-label="Следующий слайд"></button>
+            </div>
+        </section>
+    </main>
+    <footer class="footer main-footer">
+        <div class="footer__addres addres">
+            <h3 class="h3 footer__h3"></h3>'
+            <p class="p addres__p">
+                г. Санкт-Петербург, ул. Большая Конюшенная 19/8
+            </p>
+            <a href="tel:+78125556666">+7 (812) 555-66-66</a>
+        </div>
+        <div class="footer__social ">
+            <ul class="social">
+                <li class="social__button">
+                    <a href="" class="social__vk">Вконтакте</a>
+                </li>
+                <li class="social__button">
+                    <a href="" class="social__fb">Фейсбук</a>
+                </li>
+                <li class="social__button">
+                    <a href="" class="social__in">Инстаграмм</a>
+                </li>
+            </ul>
+        </div>
+        <div class="copyright">
+            <p class="p copyright__p">Разработано:</p>
+            <a href="https://github.com/horhik" class="button copyright__button">HTML ACADEMY</a>
+        </div>
+    </footer>
 </body>
+
 </html>
