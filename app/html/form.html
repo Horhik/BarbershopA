@@ -1,12 +1,146 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Запись на стрижку</title>
 </head>
+
 <body>
-    
+    <header class="header page-header ">
+        <h1 class="visually-hidden">Барбершоп Бородинский</h1>
+        <img src="../../src/svg/" alt="Логотип Барбершопа" class="page-header__img">
+        <nav class="mobile-nav">
+            <span class="mobile-nav__title">Записаться</span>
+            <button class="burger mobile-nav__burger">Открыть Меню</button>
+        </nav>
+        <nav class="page-header__nav main-nav">
+            <ul class="main-nav__page-nav ">
+                <li class="page-nav__item"><a href="index.html">ГЛАВНАЯ</a></li>
+                <li class="page-nav__item"><a href="works.html">Наши работы</a></li>
+                <li class="page-nav__item page-nav__item--active"><a href="form.html">Записаться</a></li>
+                <li class="page-nav__item"><a href="contacts.html">Контакты</a></li>
+                <li class="page-nav__item"><a href="https://htmlacademy.ru">HTML ACADEMY</a></li>
+            </ul>
+            <ul class="main-nav__user-nav user-nav">
+                <li class="user-nav__items user-nav__sign-in">
+                    <a href="#" class="">Войти</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="page">
+        <section class="content">
+            <h1 class="h1 form__h1">
+                Запись на стрижку
+            </h1>
+            <form action="https://echo.htmlacademy.ru" method="GET">
+                <fieldset class="form__fieldset">
+                    <legend class="form__title visually-hidden">Введите свои контакты</legend>
+                    <div class="form--inner">
+                        <input type="text" name="Фамилия" class="form__text" placeholder="Фамилия">
+                        <input type="text" name="Имя" class="form__text" placeholder="Имя">
+                        <input type="text" name="Отчество" class="form__text" placeholder="Отчество">
+                    </div>
+                    <div class="form--inner">
+                        <input type="tel" name="Контактный телефон" class="form__text" placeholder="Контактный телефон">
+                        <input type="email" name="Контактный e-mail" class="form__text" placeholder="Контактный e-mail">
+                    </div>
+                    <textarea name="Доп. информация для мастера" cols="30" rows="10" placeholder="Доп. информация для мастера"></textarea>
+                </fieldset>
+                <fieldset class="form__fieldset">
+                    <legend class="form__title">ВЫберите модель бороды:</legend>
+                    <ul class="beard">
+                        <li class="beard__item">
+                            <input type="radio" name="beard" class="beard__radio" id="beard-1">
+                            <label for="beard-1">адмирал</label>
+                            <img src="../../src/svg/beard-1.svg" alt="Борда: адмирал ">
+                        </li>
+                        <li class="beard__item">
+                            <input type="radio" name="beard" class="beard__radio" id="beard-2">
+                            <label for="beard-2">лесоруб</label>
+                            <img src="../../src/svg/beard-2.svg" alt="Борда: лесоруб ">
+                        </li>
+                        <li class="beard__item">
+                            <input type="radio" name="beard" class="beard__radio" id="beard-3">
+                            <label for="beard-3">полярник</label>
+                            <img src="../../src/svg/beard-3.svg" alt="Борда: полярник ">
+                        </li>
+                        <li class="beard__item">
+                            <input type="radio" name="beard" class="beard__radio" id="beard-4">
+                            <label for="beard-4">боярин</label>
+                            <img src="../../src/svg/beard-4.svg" alt="Борда: боярин ">
+                        </li>
+                        <li class="beard__item">
+                            <input type="radio" name="beard" class="beard__radio" id="beard-5">
+                            <label for="beard-5">мудрец</label>
+                            <img src="../../src/svg/beard-5.svg" alt="Борда: мудрец ">
+                        </li>
+                    </ul>
+                </fieldset>
+                <fieldset class="form__fieldset">
+                    <legend class="form__title">Дополнительные услуги:</legend>
+                    <ul class="serves">
+                        <li class="serves__items">
+                            <input type="checkbox" name="Подкрасить бороду" class="visually-hidden" id="checkbox-1">
+                            <label for="checkbox-1" class="serves__checkbox checkbox">Подкрасить бороду</label>
+                        </li>
+                        <li class="serves__items">
+                            <input type="checkbox" name="Причесать бороду" class="visually-hidden" id="checkbox-3">
+                            <label for="checkbox-3" class="serves__checkbox checkbox">Причесать бороду</label>
+                        </li>
+                        <li class="serves__items">
+                            <input type="checkbox" name="Убрать седину" class="visually-hidden" id="checkbox-5">
+                            <label for="checkbox-5" class="serves__checkbox checkbox">Убрать седину</label>
+                        </li>
+                        <li class="serves__items">
+                            <input type="checkbox" name="Накрутить усы" class="visually-hidden" id="checkbox-2">
+                            <label for="checkbox-2" class="serves__checkbox checkbox">Накрутить усы</label>
+                        </li>
+                        <li class="serves__items">
+                            <input type="checkbox" name="Подровнять виски" class="visually-hidden" id="checkbox-4">
+                            <label for="checkbox-4" class="serves__checkbox checkbox">Подровнять виски</label>
+                        </li>
+                        <li class="serves__items">
+                            <input type="checkbox" name="Отполировать лысину" class="visually-hidden" id="checkbox-6">
+                            <label for="checkbox-6" class="serves__checkbox checkbox">Отполировать лысину</label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <button type="submit">Отправить заявку</button>
+            </form>
+
+        </section>
+
+    </main>
+    <footer class="footer main-footer">
+        <div class="footer__addres addres">
+            <h3 class="h3 footer__h3"></h3>'
+            <p class="p addres__p">
+                г. Санкт-Петербург, ул. Большая Конюшенная 19/8
+            </p>
+            <a href="tel:+78125556666">+7 (812) 555-66-66</a>
+        </div>
+        <div class="footer__social ">
+            <ul class="social">
+                <li class="social__button">
+                    <a href="" class="social__vk">Вконтакте</a>
+                </li>
+                <li class="social__button">
+                    <a href="" class="social__fb">Фейсбук</a>
+                </li>
+                <li class="social__button">
+                    <a href="" class="social__in">Инстаграмм</a>
+                </li>
+            </ul>
+        </div>
+        <div class="copyright">
+            <p class="p copyright__p">Разработано:</p>
+            <a href="https://github.com/horhik" class="button copyright__button">HTML ACADEMY</a>
+        </div>
+    </footer>
 </body>
+
 </html>

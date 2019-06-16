@@ -1,12 +1,175 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
+
 <body>
-    
+    <header class="header page-header ">
+        <h1 class="visually-hidden">Барбершоп Бородинский</h1>
+        <img src="../../src/svg/" alt="Логотип Барбершопа" class="page-header__img">
+        <nav class="mobile-nav">
+            <span class="mobile-nav__title">Записаться</span>
+            <button class="burger mobile-nav__burger">Открыть Меню</button>
+        </nav>
+        <nav class="page-header__nav main-nav">
+            <ul class="main-nav__page-nav ">
+                <li class="page-nav__item"><a href="index.html">ГЛАВНАЯ</a></li>
+                <li class="page-nav__item"><a href="works.html">Наши работы</a></li>
+                <li class="page-nav__item page-nav__item--active"><a href="form.html">Записаться</a></li>
+                <li class="page-nav__item"><a href="contacts.html">Контакты</a></li>
+                <li class="page-nav__item"><a href="https://htmlacademy.ru">HTML ACADEMY</a></li>
+            </ul>
+            <ul class="main-nav__user-nav user-nav">
+                <li class="user-nav__items user-nav__sign-in">
+                    <a href="#" class="">Войти</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="page">
+        <nav class="photos-nav">
+            <h1 class="h1 photos-nav__h1">Наши работы</h1>
+            <a href="" class="photos-nav__link">На главную</a>
+        </nav>
+        <section class="works">
+            <ul class="woks__list">
+                <li class="work best-work">
+                    <img src="../../src/img/best-work.jpg" alt="Фотография лучшей работы месяца" class="best-work__img">
+                    <div class="work--inner">
+                        <h2 class="h2 work__h2">
+                            Лжепётр Мчиславский
+                        </h2>
+                        <p class="p work__p">
+                            Где я только не стригся, но так как делаете это вы — не умеет никто другой! Еще раз спасибо и до скорого!
+                        </p>
+                        <ul class="features work__features">
+                            <li class="features__item features__item--haircut"></li>
+                        </ul>
+                        <span class="best-work__label">
+                            Работа месяца 
+                        </span>
+                    </div>
+                </li>
+                <li class="work">
+                    <img src="../../src/img/work-1" alt="Фотография стрижки" class="work__img">
+                    <div class="work--inner">
+                        <h2 class="h2 work__h2">
+                            Саша Мальцев
+                        </h2>
+                        <p class="p work__p">
+                            Попросил омолодить и омолодили! Кто теперь скажет, что мне 45?
+                        </p>
+                        <ul class="features work__features">
+                            <li class="features__item features__item--beardcut"></li>
+                            <li class="features__item features__item--mustache"></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="work">
+                    <img src="../../src/img/work-2" alt="Фотография стрижки" class="work__img">
+                    <div class="work--inner">
+                        <h2 class="h2 work__h2">
+                            Владимир Иваныч
+                        </h2>
+                        <p class="p work__p">
+                            К зимнему сезону — готов!
+                        </p>
+                        <ul class="features work__features">
+                            <li class="features__item features__item--haircut"></li>
+                        </ul>
+
+                    </div>
+                </li>
+                <li class="work">
+                    <img src="../../src/img/work-3" alt="Фотография стрижки" class="work__img">
+                    <div class="work--inner">
+                        <h2 class="h2 work__h2">
+                            Винстон Синий
+                        </h2>
+                        <p class="p work__p">
+                            Как только заростаю и волосы начинают мешать видеть — бегом в Бородинский!
+                        </p>
+                        <ul class="features work__features">
+                            <li class="features__item features__item--haircut"></li>
+                            <li class="features__item features__item--beardcut"></li>
+                            <li class="features__item features__item--mustache"></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <section class="pricelist">
+            <table class="precelist__table price-table">
+                <tr>
+                    <td><span class="pricelist__hidden">1</span></td>
+                    <td>Классическая стрижка</td>
+                    <td><span class="pricelist__hidden">(</span>с мытьём головы<span class="pricelist__hidden">)</span></td>
+                    <td>1 500 руб.</td>
+                </tr>
+                <tr>
+                    <td><span class="pricelist__hidden">2</span></td>
+                    <td>Современный вариант</td>
+                    <td><span class="pricelist__hidden">(</span>с мытьём головы<span class="pricelist__hidden">)</span></td>
+                    <td>1 500 руб.</td>
+                </tr>
+                <tr>
+                    <td><span class="pricelist__hidden">3</span></td>
+                    <td>Индивидуальный подход</td>
+                    <td><span class="pricelist__hidden">(</span>с мытьём головы<span class="pricelist__hidden">)</span></td>
+                    <td>2 000 руб.</td>
+                </tr>
+                <tr>
+                    <td><span class="pricelist__hidden">4</span></td>
+                    <td>Бритьё бороды</td>
+                    <td><span class="pricelist__hidden">(</span>без мытья<span class="pricelist__hidden">)</span></td>
+                    <td>500 руб.</td>
+                </tr>
+                <tr>
+                    <td><span class="pricelist__hidden">5</span></td>
+                    <td>Бритьё головы</td>
+                    <td><span class="pricelist__hidden">(</span>с мытьём головы<span class="pricelist__hidden">)</span></td>
+                    <td>1 000 руб.</td>
+                </tr>
+            </table>
+            <div class="working-hours">
+                <img src="../../src/svg/clock.svg" alt="">
+                <p class="working-hours__p">
+                    C 10:00 до 14:00 скидка 20%
+                </p>
+            </div>
+        </section>
+    </main>
+    <footer class="footer main-footer">
+        <div class="footer__addres addres">
+            <h3 class="h3 footer__h3"></h3>'
+            <p class="p addres__p">
+                г. Санкт-Петербург, ул. Большая Конюшенная 19/8
+            </p>
+            <a href="tel:+78125556666">+7 (812) 555-66-66</a>
+        </div>
+        <div class="footer__social ">
+            <ul class="social">
+                <li class="social__button">
+                    <a href="" class="social__vk">Вконтакте</a>
+                </li>
+                <li class="social__button">
+                    <a href="" class="social__fb">Фейсбук</a>
+                </li>
+                <li class="social__button">
+                    <a href="" class="social__in">Инстаграмм</a>
+                </li>
+            </ul>
+        </div>
+        <div class="copyright">
+            <p class="p copyright__p">Разработано:</p>
+            <a href="https://github.com/horhik" class="button copyright__button">HTML ACADEMY</a>
+        </div>
+    </footer>
 </body>
+
 </html>
